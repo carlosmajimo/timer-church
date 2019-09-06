@@ -1,0 +1,96 @@
+.brand-logo {
+    width: 10vw;
+    height: 8vh;
+}
+
+.app-body {
+    width: 100%;
+    height: 85vh;
+    background-image: url('../img/logo transparente opacity.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.top-div {
+    width: 100vw;
+    height: 20vh;
+}
+
+.countdown {
+    width: 100vw;
+    height: 45vh;
+    font-size: 25vh;
+    text-shadow: 1vh 1vh black;
+    text-align: center;
+}
+
+.message {
+    width: 100vw;
+    height: 22vh;
+    font-size: 15vh;
+    text-shadow: 0.5vh 0.5vh black;
+    text-align: center;
+}
+
+.font-red {
+    color: red;
+}
+
+.font-yellow {
+    color: yellow;
+}
+
+.font-green {
+    color: limegreen;
+}
+
+.center-config {
+    padding-top: 1.5%;
+}
+
+.parpadea {
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: parpadeo;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@-webkit-keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}

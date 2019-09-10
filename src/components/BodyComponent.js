@@ -24,17 +24,10 @@ function BodyComponent() {
     };
 
     const handleTick = ({ total }) => {
+        // const timerSeconds = new Date(timer.date).getSeconds();
         setShine('');
-        if (total <= 300000) {
-            setShow(true);
-            if (total <= 120000) {
-                setClassName('font-yellow')
-            } else {
-                setClassName('font-green')
-            }
-        } else {
-            setShow(false)
-        }
+        //setShow(true);
+        if (total <= 120000) setClassName('font-yellow'); else setClassName('font-green');
     };
 
     useEffect(() => {

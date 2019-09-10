@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useDispatch } from 'react-redux';
 import { Navbar, NavbarBrand, Button } from 'reactstrap';
 import { toggleModal } from '../store/app.actions';
@@ -6,7 +6,6 @@ import logo from '../assets/img/logo contorno.png';
 
 function HeaderComponent() {
     const dispatch = useDispatch();
-    const [show, setShow] = useState('close');
 
     const handleClick = () => {
         dispatch(toggleModal(true));

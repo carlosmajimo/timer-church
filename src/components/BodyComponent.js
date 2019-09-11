@@ -5,11 +5,11 @@ import Countdown from 'react-countdown-now';
 
 function BodyComponent() {
     const dispatch = useDispatch();
-    const [show, setShow] = useState(false);
     const [className, setClassName] = useState('font-green');
     const [shine, setShine] = useState('');
     const id = useSelector(state => state.id);
     const timer = useSelector(state => state.timer);
+    const show = useSelector(state => state.show);
 
     const countdownRender = ({ completed, formatted }) => {
         if (completed) {

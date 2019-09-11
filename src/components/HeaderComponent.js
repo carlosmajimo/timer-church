@@ -1,14 +1,19 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { Navbar, NavbarBrand, Button } from 'reactstrap';
-import { toggleModal } from '../store/app.actions';
+import { toggleModal, setShow } from '../store/app.actions';
 import logo from '../assets/img/logo contorno.png';
 
 function HeaderComponent() {
     const dispatch = useDispatch();
+    const show = useSelector(state => state.show);
 
     const handleClick = () => {
         dispatch(toggleModal(true));
+    };
+
+    const handleShow = () => {
+        dispatch(setShow(!show));
     };
 
     return(
@@ -18,6 +23,9 @@ function HeaderComponent() {
                     <img src={logo} alt="..." className="brand-logo" />
                 </NavbarBrand>
                 <Button color="danger" onClick={handleClick} style={{backgroundColor: '#eb6864'}} >
+                    <span className="navbar-toggler-icon" />
+                </Button>
+                <Button color="danger" onClick={handleShow} style={{backgroundColor: '#d16460'}} >
                     <span className="navbar-toggler-icon" />
                 </Button>
             </Navbar>

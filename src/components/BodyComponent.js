@@ -37,7 +37,7 @@ function BodyComponent() {
     return(
         <div className="app-body">
             <div className="top-div" />
-            <div className={`countdown ${className} ${shine}`} style={{opacity: show ? 1 : 0 }}>
+            <div className={`countdown font-white ${shine}`} style={{opacity: show ? 1 : 0 }}>
                 <Countdown
                     key={id}
                     date={timer.date}
@@ -45,7 +45,7 @@ function BodyComponent() {
                     onTick={handleTick}
                 />
             </div>
-            <div className={`message ${className} ${shine}`} style={{opacity: show ? 1 : 0 }}>
+            <div className={`message font-white ${shine}`} style={{opacity: show ? 1 : 0 }}>
                 { timer.message }
             </div>
         </div>
